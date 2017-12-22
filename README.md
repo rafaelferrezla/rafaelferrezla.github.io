@@ -8,7 +8,7 @@
 
 <br/>
 
-[![Jekyllrb](/assets/img/)](https://jekyllrb.com/)
+[![Jekyllrb](/assets/img/jekyll.png)](https://jekyllrb.com/)
 [![React](/assets/img/react-padded-90.png)](https://facebook.github.io/react/)
 [![Redux](/assets/img/redux-padded-90.png)](http://redux.js.org/)
 [![Webpack](/assets/img/webpack-padded-90.png)](https://webpack.github.io/)
