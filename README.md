@@ -4,7 +4,7 @@
 
 <br/>
 
-[![Build Status][travis-image]][travis-url]
+
 
 <br/>
 
