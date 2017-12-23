@@ -4,13 +4,9 @@
 
 <br/>
 
-
-
-<br/>
-
 [![Jekyllrb](/assets/img/jekyll.png)](https://jekyllrb.com/)
 [![React](/assets/img/react-padded-90.png)](https://facebook.github.io/react/)
-[![Redux](/assets/img/redux-padded-90.png)](http://redux.js.org/)
+[![Redux](/assets/img/redux-padded-90.png)](https://redux.js.org/)
 [![Webpack](/assets/img/webpack-padded-90.png)](https://webpack.github.io/)
 [![Npm](/assets/img/npm.png)](https://www.npmjs.com/)
 
@@ -29,7 +25,7 @@ And then install dependencies with npm.
 
 ```bash
 $ cd your-project-name
-$ npm install webpack babel-core babel-loader babel-preset-es2015 babel-preset-react react react-addons-update react-dom --save-dev
+$ npm install webpack babel-core babel-loader babel-preset-es2015 babel-preset-react react redux react-redux react-addons-update react-dom --save-dev
 ```
 
 ## Run
@@ -39,6 +35,7 @@ Start the process:
 ```bash
 $ webpack
 $ jekyll build
+$ jekyll serve
 ```
 
 
