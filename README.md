@@ -10,7 +10,7 @@
 [![Webpack](/assets/img/webpack-padded-90.png)](https://webpack.github.io/)
 [![Npm](/assets/img/npm.png)](https://www.npmjs.com/)
 
-[Jekyll](https://jekyllrb.com/) boilerplate with [React](https://facebook.github.io/react/), [Redux](https://github.com/reactjs/redux), [Webpack](http://webpack.github.io/docs/),for agile development.
+[Jekyll](https://jekyllrb.com/) boilerplate with [React](https://facebook.github.io/react/), [Redux](https://github.com/reactjs/redux), [Webpack](http://webpack.github.io/docs/), for agile development.
 
 
 ## Install
@@ -40,4 +40,4 @@ $ jekyll serve
 
 
 ## License
-MIT © [Rafael Ferrez](https://github.com/rafaelferrezla)
+MIT © [Rafael Ferrez.](https://github.com/rafaelferrezla)
