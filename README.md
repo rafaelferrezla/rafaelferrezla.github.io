@@ -3,7 +3,7 @@
 ### A Boilerplate for Static Site
 
 <br/>
-[![Build Status][travis-image]][https://travis-ci.org/rafaelferrezla/rafaelferrezla.github.io.svg?branch=master]
+[![Build Status](https://travis-ci.org/rafaelferrezla/rafaelferrezla.github.io.svg?branch=master)]
 
 [![Jekyllrb](/assets/img/jekyll.png)](https://jekyllrb.com/)
 [![React](/assets/img/react-padded-90.png)](https://facebook.github.io/react/)
