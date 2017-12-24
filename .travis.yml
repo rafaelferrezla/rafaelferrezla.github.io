@@ -6,8 +6,8 @@ install:
 - "./assets/javascripts/test"
 script:
 - bundle exec jekyll build --trace
-- bundle exec htmlproofer ./_site --only-4xx --allow-hash-href
-## Update composer and run the appropriate composer command
+- bundle exec htmlproofer ./_site 
+
 before_script:
   - chmod +x ./assets/javascripts/test
 env:
