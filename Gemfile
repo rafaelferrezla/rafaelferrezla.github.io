@@ -23,7 +23,9 @@ group :jekyll_plugins do
   gem "jekyll-feed", '~> 0.6'
   gem 'jekyll-seo-tag', '~> 2.3'
   gem 'html-proofer', '~> 3.7.6'
-  gem 'rake', '~>  12.3.2'
+  gem 'rake', '~>  12.3.0'
+  gem 'liquid', '~>  4.0.0'
+  #gem "rb-fsevent", "~> 0.9.0"
   
 end
 

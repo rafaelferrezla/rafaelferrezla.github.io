@@ -16,7 +16,8 @@ GEM
     execjs (2.7.0)
     extras (0.3.0)
       forwardable-extended (~> 2.5)
-    fastimage (2.1.0)
+    fastimage (2.1.1)
+    ffi (1.9.18)
     ffi (1.9.18-x64-mingw32)
     forwardable-extended (2.6.0)
     html-proofer (3.7.6)
@@ -41,7 +42,7 @@ GEM
       pathutil (~> 0.9)
       rouge (>= 1.7, < 3)
       safe_yaml (~> 1.0)
-    jekyll-assets (3.0.3)
+    jekyll-assets (3.0.5)
       activesupport (~> 5.0)
       execjs (~> 2.7)
       extras (~> 0.2)
@@ -58,7 +59,7 @@ GEM
       jekyll (~> 3.1)
     jekyll-sass-converter (1.5.1)
       sass (~> 3.4)
-    jekyll-seo-tag (2.3.0)
+    jekyll-seo-tag (2.4.0)
       jekyll (~> 3.3)
     jekyll-watch (1.5.1)
       listen (~> 3.0)
@@ -75,21 +76,24 @@ GEM
     mini_portile2 (2.3.0)
     minima (2.1.1)
       jekyll (~> 3.3)
-    minitest (5.10.1)
+    minitest (5.10.3)
+    nokogiri (1.8.1)
+      mini_portile2 (~> 2.3.0)
     nokogiri (1.8.1-x64-mingw32)
       mini_portile2 (~> 2.3.0)
     parallel (1.12.1)
-    pathutil (0.16.0)
+    pathutil (0.16.1)
       forwardable-extended (~> 2.6)
     public_suffix (3.0.1)
     rack (2.0.3)
+    rake (12.3.0)
     rb-fsevent (0.10.2)
     rb-inotify (0.9.10)
       ffi (>= 0.5.0, < 2)
     rouge (2.2.1)
     ruby_dep (1.5.0)
     safe_yaml (1.0.4)
-    sass (3.5.3)
+    sass (3.5.4)
       sass-listen (~> 4.0.0)
     sass-listen (4.0.0)
       rb-fsevent (~> 0.9, >= 0.9.4)
@@ -107,6 +111,7 @@ GEM
     yell (2.0.7)
 
 PLATFORMS
+  ruby
   x64-mingw32
 
 DEPENDENCIES
@@ -115,8 +120,10 @@ DEPENDENCIES
   jekyll-assets (~> 3.0.3)
   jekyll-feed (~> 0.6)
   jekyll-seo-tag (~> 2.3)
+  liquid (~> 4.0.0)
   minima (~> 2.0)
+  rake (~> 12.3.0)
   tzinfo-data
 
 BUNDLED WITH
-   1.16.0
+   1.16.1
