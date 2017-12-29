@@ -3,6 +3,7 @@
 ### A Boilerplate for Static Site
 
 <br/>
+
 [![Jekyllrb](/assets/img/jekyll.png)](https://jekyllrb.com/)
 [![React](/assets/img/react-padded-90.png)](https://facebook.github.io/react/)
 [![Redux](/assets/img/redux-padded-90.png)](https://redux.js.org/)
@@ -24,7 +25,7 @@ And then install dependencies with npm.
 
 ```bash
 $ cd your-project-name
-$ npm install webpack babel-core babel-loader babel-preset-env babel-preset-react react redux react-redux react-addons-update react-dom --save-dev
+$ npm install webpack babel-core babel-loader babel-preset-es2015 babel-preset-react react redux react-redux react-addons-update react-dom --save-dev
 ```
 
 ## Run
