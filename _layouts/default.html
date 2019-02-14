@@ -1,32 +1,21 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
-  {% include head.html %}
+  {%- include head.html -%}
 
-  <body>
-    <div id="root"></div>
-        <script type="text/javascript" src="/assets/javascripts/bundle.js" charset="utf-8"></script>
-    
-    {% include header.html %}
+  <body class="profile-page sidebar-collapse">
+
+    {%- include header.html -%}
 
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        <!-- {{ content }} -->
+        {{ content }}
       </div>
     </main>
-
-    {% include footer.html %}
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-130062729-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-130062729-1');
-    </script>
-
+    
+    {%- include footer.html -%}
+    {%- include javascript.html -%}
+    {%- include google-analytics.html -%}
   </body>
 
 </html>

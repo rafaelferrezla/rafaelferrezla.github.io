@@ -1,32 +1,84 @@
-<header class="site-header" role="banner">
+<header class="site-header">
 
   <div class="wrapper">
-    {% assign default_paths = site.pages | map: "path" %}
-    {% assign page_paths = site.header_pages | default: default_paths %}
-    <a class="site-title" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
-  
-    {% if page_paths %}
-      <nav class="site-nav">
-        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
-        <label for="nav-trigger">
-          <span class="menu-icon">
-            <svg viewBox="0 0 18 15" width="18px" height="15px">
-              <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
-              <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
-              <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
-            </svg>
-          </span>
-        </label>
+    {%- assign default_paths = site.pages | map: "path" -%}
+    {%- assign page_paths = site.header_pages | default: default_paths -%}
+    {%- assign titles_size = site.pages | map: 'title' | join: '' | size -%}
+    <!-- <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a> -->
 
-        <div class="trigger">
-          {% for path in page_paths %}
-            {% assign my_page = site.pages | where: "path", path | first %}
-            {% if my_page.title %}
-            <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
-            {% endif %}
-          {% endfor %}
-        </div>
-      </nav>
-    {% endif %}
+    {%- if titles_size > 0 -%}
+          <nav class="navbar navbar-transparent navbar-color-on-scroll fixed-top navbar-expand-lg" color-on-scroll="100" id="sectionsNav">
+            <div class="container">
+                <div class="navbar-translate">
+                  <a class="navbar-brand" href="#">
+                  <img src="../assets/img/logo.jpg" width="40" height="40"></a> 
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="navbar-toggler-icon"></span>
+                  <span class="navbar-toggler-icon"></span>
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              </div>
+              <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://github.com/rafaelferrezla" target="_blank" data-original-title="Follow on Github">
+                     <i class='fa fa-github'></i>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://www.linkedin.com/in/rafaelferrez" target="_blank" data-original-title="Follow on Linkedin">
+                      <i class="fa fa-linkedin"></i>
+                      
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" rel="tooltip" title="" data-placement="bottom" href="https://twitter.com/rafaelferrezla" target="_blank" data-original-title="Follow on Twitter">
+                      <i class="fa fa-twitter"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+          <div id="particles-js" class="page-header header-filter" data-parallax="true" style="background: #000030";></div> <!-- style="background-image: url('../assets/img/city-profile.jpg'); -->
+          <div class="main main-raised">
+            <div class="profile-content">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-6 ml-auto mr-auto">
+                    <div class="profile">
+                      <div class="avatar animated bounce delay-1s">
+                        <img src="../assets/img/boss.jpg" alt="Circle Image" class="img-raised rounded-circle img-fluid">
+                      </div>
+                      <div class="name animated bounce delay-1s">
+                        <h3 class="title">RAFAEL FERREZ <i class="material-icons">verified_user</i></h3>
+                        <h6>Unknown</h6>
+                        <h6>Engineer Computer's science</h6>
+                        <a href="https://github.com/rafaelferrezla" class="btn btn-just-icon btn-link btn-github"><i class="fa fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/rafaelferrez" class="btn btn-just-icon btn-link btn-linkedin"><i class="fa fa-linkedin"></i></a>
+                        <a href="https://twitter.com/rafaelferrezla" class="btn btn-just-icon btn-link btn-twitter"><i class="fa fa-twitter"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="description text-center animated bounce delay-1s">
+                  <p>I´m Venezuelan Engineer &#x2014; Interested in networks and CiberSec &#x2014; Training engineer, people interested also in the security of information systems and the world of malware. With similar content capacity in a self-taught way. Interested in world-class certifications such as CEH, CISSP and currently studying Ruby and RoR. </p>
+                </div>
+
+               
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+
+              </div>
+            </div>
+          </div>
+     
+    {%- endif -%}
+
   </div>
 </header>
